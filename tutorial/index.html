@@ -75,7 +75,7 @@
     <section class="example">
       <div class="container">
         <h1>Let's Dive Right In</h1>
-        <p>Follow along with this tutorial by copying and pasting code into the specified files and locations, indicated <em><code>like so</code></em> above the code snippets.</p>
+        <p>Follow along with this tutorial by copying and pasting code into the specified files and locations, indicated <em class="unstyled"><code>&lt;like so&gt;</code></em> above the code snippets.</p>
         <hr>
         <img src="https://media.giphy.com/media/iqzp1pBJtNQUU/giphy.gif">
       </div>
@@ -107,7 +107,7 @@
       <div class="container">
         <div class="circle">3</div>
         <h1>Fonts &amp; Icons</h1>
-        <p>Employing effective fonts and icons should be a fundamental and enjoyable part of your web design process. Include as many fonts as you like, and make sure your icon &lt;link&gt; url is up-to-date.</p>
+        <p>Employing effective fonts and icons puts the 'fun' in fundamental!  Include as many fonts as you like, and make sure your icon &lt;link&gt; url is up-to-date.</p>
         <hr>
         <em><code>&lt;head&gt;</code></em>
         <script src="https://gist.github.com/andrewborstein/b2787171e26eef1b8eb3.js"></script>
@@ -118,7 +118,7 @@
       <div class="container">
         <div class="circle">4</div>
         <h1>Normalize, Grid, &amp; Custom Styles</h1>
-        <p>Browsers will render your CSS differently by default. To avoid this, include <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a> or take it a step further with Andrew's version of <a href="https://gist.github.com/andrewborstein/099e0ed6b5b5fd5a0390" target="_blank">Initialize.css</a>. Remember to include it before your custom stylesheets.</p>
+        <p>Browsers will render your CSS differently by default. To avoid this, include <a href="https://code.google.com/archive/p/normalize-css/" target="_blank">Normalize.css</a> or Andrew's <a href="https://gist.github.com/andrewborstein/099e0ed6b5b5fd5a0390" target="_blank">Initialize.css</a>. Remember to place it <em class="unstyled">before</em> your custom stylesheets. For this tutorial, we'll place all our grid-related CSS inside <code>&lt;grid.css&gt;</code></p>
         <hr>
         <em><code>&lt;head&gt;</code></em>
         <script src="https://gist.github.com/andrewborstein/f5f56af0d88afe3c10b4.js"></script>
@@ -170,7 +170,7 @@
       <div class="container">
         <div class="circle">5</div>
         <h1>Use box-sizing: border-box</h1>
-        <p>Place at the top of your <code>CSS</code> file. This will keep containers the same size when you add a border or padding &mdash; it pushes content inwards instead of expanding the container outwards.</p>
+        <p>This will keep containers the same size when you add a border or padding &mdash; it pushes content <em class="unstyled">inwards</em> instead of expanding the container <em class="unstyled">outwards</em>. I've already added this snippet in <code>initialize.css</code>, but you should add it manually if you don't include that file.</p>
         <hr>
         <em><code>grid.css</code></em>
         <script src="https://gist.github.com/andrewborstein/5af48c687358a84cab5f.js"></script>
@@ -179,7 +179,7 @@
 
     <section>
       <div class="container">
-        <h1>Your Choice</h1>
+        <h1>Your Choice (Choose Wisely)</h1>
         <p><a href="http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug" target="_blank">What was once a bug</a>
         is now a widely used CSS property. It basically means you can choose whether or not to include borders and padding in
         the width of your content.</p>
@@ -188,14 +188,14 @@
         <div class="row clearfix">
           <div class="column one-half">
             <img src="img/without-box-model.png" alt="Without Box Model">
-            <h3>Without box-sizing: border-box</h3>
-            <p>Margin, borders and padding are drawn <em>outside</em> the set width of your content.</p>
+            <h3><code>box-sizing: content-box</code></h3>
+            <p>Margin, borders and padding are drawn <em class="unstyled">outside</em> the specified width of your content.</p>
           </div>
 
           <div class="column one-half">
             <img src="img/with-box-model.png" alt="With Box Model">
-            <h3>With box-sizing: border-box</h3>
-            <p>Borders and padding are drawn <em>inside</em> the set width of your content. (Only the margin is drawn outside.)</p>
+            <h3><code>box-sizing: border-box</code></h3>
+            <p>Borders and padding are drawn <em class="unstyled">inside</em> the specified width of your content. (Only the margin is drawn outside.)</p>
           </div>
         </div>
       </div>
@@ -224,7 +224,7 @@
       <div class="container">
         <div class="circle">7</div>
         <h1>Create a Column</h1>
-        <p>With mobile first, columns are <code>block</code> level (takes up the full width available) by default. No
+        <p>With mobile first, columns are <code>block</code> level (take up the full width available) by default. No
         additional styles needed! We're also giving them horizontal padding and vertical margins by default, but we can easily override that, too.</p>
         <hr>
         <em><code>&lt;body&gt;</code></em>
@@ -256,7 +256,8 @@
       <div class="container">
         <div class="circle">8</div>
         <h1>Create Column Sizes</h1>
-        <p>Columns are set to <code>float: left</code> in order to stack content horizontally on larger screens. On all large (non-mobile) screens, enable a grid layout with different width columns.</p>
+        <p>Columns are set to <code>float: left</code> so that on large screens we can:
+        <br>a) stack content side-by-side and <br>b) enable a grid layout with different width columns.</p>
         <hr>
       </div>
 

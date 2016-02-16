@@ -522,10 +522,11 @@ section:first-of-type { border-top: none; }
   section { padding: 4rem 0; }
 }
 
-em {
+em:not(.unstyled) {
     padding: 1em;
     display: block;
 }
+
 
 /*
  * ----------------------
@@ -852,6 +853,7 @@ img {
 
 .example p { color: rgba(255,255,255,0.7); }
 .example img { margin: 0; }
+.example code { color: #555; }
 
 .fragmentation {
   background-image: url("img/fragmentation.png");
