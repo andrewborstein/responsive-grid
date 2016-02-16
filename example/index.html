@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+  <head>
+
+    <!-- The Basics: The title and description appear in your browser window/tab and in search engine results. -->
+    <title>My Website</title>
+    <meta name="description" content="My awesome personal website. You're gonna love it.">
+
+    <!-- Every responsive website must have this! Forces pixel-dense devices to display content correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,900,700" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Initialize CSS: Normalize + Best Practices -->
+    <link rel="stylesheet" type="text/css" href="css/initialize.css">
+
+    <!-- Grid CSS-->
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+    <!-- My Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+  </head>
+
+  <body>
+
+    <section class="example grid">
+
+      <h2>Responsive Grid</h2>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="column">
+            <span>.column </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column two-thirds">
+            <span>.column .two-thirds</span>
+          </div>
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-half">
+            <span>.column .one-half</span>
+          </div>
+          <div class="column one-half">
+            <span>.column .one-half</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="example grid">
+
+      <h2>Nested Elements</h2>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="column">
+            <span>
+              .column
+              <div class="row no-margin">
+                <div class="column one-half">
+                  <div class="row">
+                    <div class="column">
+                      <span>
+                        .column .one-half
+                        <div class="row no-margin">
+                          <div class="column one-half">
+                            <span>.column .one-half</span>
+                          </div>
+                          <div class="column one-half">
+                            <span>.column .one-half</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="column one-half">
+                  <div class="row">
+                    <div class="column">
+                      <span>
+                        .column .one-half
+                        <div class="row no-margin">
+                          <div class="column one-half">
+                            <span>.column .one-half</span>
+                          </div>
+                          <div class="column one-half">
+                            <span>.column .one-half</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-third">
+            <span>
+              .column .one-third
+              <div class="row no-margin">
+                <div class="column one-half">
+                  <span>.column .one-half</span>
+                </div>
+                <div class="column one-half">
+                  <span>.column .one-half</span>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="column two-thirds">
+            <span>
+              .column .two-thirds
+              <div class="row no-margin">
+                <div class="column one-third">
+                  <span>.column .one-third</span>
+                </div>
+                <div class="column one-third">
+                  <span>.column .one-third</span>
+                </div>
+                <div class="column one-third">
+                  <span>.column .one-third</span>
+                </div>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="example grid">
+
+      <h2>Offsets</h2>
+
+      <div class="container">
+
+        <div class="row ">
+          <div class="column one-third offset-one-third">
+            <span>.column .one-third .offset-one-third</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-half offset-one-fourth">
+            <span>.column .one-half .offset-one-fourth</span>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth offset-one-half">
+            <span>.column .one-fourth .offset-one-half</span>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="column one-sixth offset-one-sixth">
+            <span>.column .one-sixth .offset-one-sixth</span>
+          </div>
+          <div class="column one-sixth offset-one-third">
+            <span>.column .one-sixth .offset-one-third</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-half flow-opposite">
+            <span>.column .one-half .flow-opposite</span>
+          </div>
+          <div class="column one-half">
+            <span>.column .one-half</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="example grid">
+
+      <h2>No Padding or Margin</h2>
+
+      <div class="container no-padding no-margin">
+
+        <div class="row">
+          <div class="column">
+            <span>.column </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column two-thirds">
+            <span>.column .two-thirds</span>
+          </div>
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-half">
+            <span>.column .one-half</span>
+          </div>
+          <div class="column one-half">
+            <span>.column .one-half</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+          <div class="column one-third">
+            <span>.column .one-third</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+          <div class="column one-fourth">
+            <span>.column .one-fourth</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+          <div class="column one-sixth">
+            <span>.column .one-sixth</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="example grid">
+
+      <p class="button"><a href="#" target="_blank" >Download This Example</a></p>
+
+    </section>
+
+  </body>
+
+</html>
