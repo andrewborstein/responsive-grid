@@ -26,6 +26,7 @@
       div a {
         color: white;
         text-decoration: none;
+        display: block;
       }
       body div:first-of-type {
         border-right: 1px solid white;
@@ -42,7 +43,8 @@
         vertical-align: middle
       }
       .example:hover {
-        background-color: #3D6790
+        background-color: #3D6790;
+        cursor: pointer;
       }
       .example:hover a {
         text-decoration: none;
@@ -54,10 +56,17 @@
 
     <div class="content ">
       <div class="v-align example">
-        <a href="tutorial" target="_blank">View the Tutorial</a>
+        <a href="tutorial">
+          <p><i class="fa fa-graduation-cap fa-2x"></i></p>
+          Tutorial
+        </a>
+
       </div>
       <div class="v-align example">
-        <a href="example" target="_blank">Download the Example</a>
+        <a href="example">
+          <p><i class="fa fa-th fa-2x"></i></p>
+          Example
+        </a>
       </div>
     </div>
 
