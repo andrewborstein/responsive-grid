@@ -33,7 +33,7 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-.container-fluid {
+.container.fluid {
   max-width: none;
 }
 
