@@ -32,6 +32,7 @@ html {
   padding: 1em 2em;
   margin-right: auto;
   margin-left: auto;
+  overflow: auto;
 }
 .container.fluid {
   max-width: none;
