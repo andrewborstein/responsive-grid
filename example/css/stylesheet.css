@@ -1,50 +1,70 @@
-/* Custom Styles */
+/*
+ * ----------------------
+ * EXAMPLE STYLES
+ * ----------------------
+ */
+
 body {
   background-color: #497bad;
   font-family: Lato, sans-serif;
   color: #fff;
 }
+
 body:before {
   display: block;
-  background: rgba(225,255,255,0.1);
-  border-bottom: 2px solid rgba(255,255,255,0.2);
+  background: rgba(225, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   padding: 1em;
   text-align: center;
   font-style: italic;
 }
-.example {
+
+.example-style {
+  text-align: center;
+}
+
+.example-style section {
   border-top: none;
   margin-bottom: 6em;
 }
+
 @media (min-width: 1025px) {
-  .example .container { border: 2px dashed rgba(255, 255, 255, 0.5); }
+  .example-style .container {
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+  }
 }
-.example span {
-  background: rgba(225,255,255,0.1);
-  border: 2px solid rgba(255,255,255,0.2);
-  padding: 1rem;
+
+.example-style .row:last-child .column {
+  margin-bottom: 0;
+}
+
+.example-style .column {
+  background: rgba(225, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 1em;
   display: block;
-  text-align: center;
 }
-.example h2 {
+.example-style .no-padding .column {
+  padding: 0;
+}
+
+.example-style h2 {
   color: white;
   font-size: 3em;
   margin: 1em 0;
   font-weight: 100;
   letter-spacing: 1px;
-  text-align: center;
   text-transform: uppercase;
 }
-.button {
-  text-align: center
+
+.example-style .button a {
+  text-align: center;
+  background: white;
+  padding: 1em;
+  text-decoration: none;
+  color: #333;
 }
-.button a {
-    text-align: center;
-    background: white;
-    padding: 1em;
-    text-decoration: none;
-    color: #333;
-}
-.button a:hover {
-    background: #ddd;
+
+.example-style .button a:hover {
+  background: #ddd;
 }
