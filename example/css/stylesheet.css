@@ -61,10 +61,21 @@ body:before {
   text-align: center;
   background: white;
   padding: 1em;
+  margin: 0 1em;
   text-decoration: none;
   color: #333;
+}
+.example-style .button a:first-of-type {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 .example-style .button a:hover {
   background: #ddd;
+}
+.example-style .button a:first-of-type:hover {
+  background: transparent;
+  color: #ddd;
+  border-color: #ddd;
 }
