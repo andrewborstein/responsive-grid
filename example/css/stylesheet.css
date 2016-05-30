@@ -34,8 +34,8 @@ body:before {
   }
 }
 
-.example-style .row:last-child .column {
-  margin-bottom: 0;
+.example-style .container {
+  padding-bottom: 0;
 }
 
 .example-style .column {
