@@ -34,7 +34,7 @@ body:before {
   }
 }
 
-.example-style .container {
+.example-style .container:not(.no-padding) {
   padding-bottom: 0;
 }
 
