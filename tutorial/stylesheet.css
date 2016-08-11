@@ -866,7 +866,7 @@ img {
 }
 
 .grid.mobile-first .container {
-  padding: 2em 1em 1em;
+  padding: 1em 1em 0;
 }
 
 .mobile-first .column {
@@ -876,22 +876,30 @@ img {
 
 .grid { text-align: center; }
 
-.grid span {
+.grid .column {
   background: rgba(225,255,255,0.1);
   border: 2px solid rgba(255,255,255,0.2);
   display: block;
   padding: 1rem;
   font-size: 0.9rem;
-  font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .grid .container {
   border: 2px dashed rgba(255,255,255,0.3);
+  padding: 1em 2em;
+}
+
+.grid .container.no-padding .column {
+  padding: 0;
+}
+.grid .container.no-margin .column {
+  margin: 0;
 }
 
 .row-example .container {
   border: 2px dashed rgba(255,255,255,0.2);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .row-example .row {
@@ -900,14 +908,24 @@ img {
   padding: 1em 0 0 0;
   margin-bottom: 1rem;
 }
+.row-example .row {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
 .row-example .column {
   margin-bottom: 1em ;
+}
+.grid .row:last-of-type .column,
+.row-example .row:last-of-type .column {
+  margin-bottom: 0 ;
 }
 
 .row-example .row:last-of-type { margin-bottom: 0; }
 
 @media (min-width: 40rem) {
-  .row-example .row { padding: 1rem 0 0 0; }
+  .row-example .row { padding: 0rem 0 0 0; }
 }
 
 .gutters {

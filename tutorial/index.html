@@ -107,7 +107,7 @@
       <div class="container">
         <div class="circle">3</div>
         <h1>Fonts &amp; Icons</h1>
-        <p>Employing effective fonts and icons puts the 'fun' in fundamental!  Include as many fonts as you like, and make sure your icon &lt;link&gt; url is up-to-date.</p>
+        <p>Employing effective fonts and icons puts the 'fun' in fundamental!  Include as many fonts as you like, and make sure your icon <code>&lt;link&gt;</code> url is up-to-date.</p>
         <hr>
         <em><code>&lt;head&gt;</code></em>
         <script src="https://gist.github.com/andrewborstein/b2787171e26eef1b8eb3.js"></script>
@@ -118,7 +118,8 @@
       <div class="container">
         <div class="circle">4</div>
         <h1>Normalize, Grid, &amp; Custom Styles</h1>
-        <p>Browsers will render your CSS differently by default. To avoid this, include <a href="https://code.google.com/archive/p/normalize-css/" target="_blank">Normalize.css</a> or Andrew's <a href="https://gist.github.com/andrewborstein/099e0ed6b5b5fd5a0390" target="_blank">Initialize.css</a>. Remember to place it <em class="unstyled">before</em> your custom stylesheets. For this tutorial, we'll place all our grid-related CSS inside <code>&lt;grid.css&gt;</code></p>
+        <p>Browsers will render your CSS differently by default. To avoid this, include <a href="https://code.google.com/archive/p/normalize-css/" target="_blank">Normalize.css</a> or Andrew's <a href="https://gist.github.com/andrewborstein/099e0ed6b5b5fd5a0390" target="_blank">Initialize.css</a>. Remember to place it <em class="unstyled">before</em> your custom stylesheets. For this tutorial, we'll place all our grid-related CSS inside <code>grid.css</code>.</p><br>
+        <p>If you want to include the custom styles used in this demo, copy them <a href="https://github.com/andrewborstein/responsive-grid-example/blob/gh-pages/css/stylesheet.css">here</a> into your <code>stylesheet.css</code>.</p>
         <hr>
         <em><code>&lt;head&gt;</code></em>
         <script src="https://gist.github.com/andrewborstein/f5f56af0d88afe3c10b4.js"></script>
@@ -205,18 +206,18 @@
       <div class="container">
         <div class="circle">6</div>
         <h1>Create a Container</h1>
-        <p>A container holds all elements and controls the page's maximum width. Change the <code>max-width</code> property at your leisure or use the <code>.container-fluid</code> class to make it always full-width.</p>
+        <p>A container holds your entire site &mdash; or you can have multiple containers for each section &mdash; and controls its maximum width. Change the <code>max-width</code> property at your leisure or use the <code>.container-fluid</code> class to make your container expand with the size of the browser window.</p>
         <hr>
         <em><code>grid.css</code></em>
         <script src="https://gist.github.com/andrewborstein/b81a660fcf6ade155c25.js"></script>
         <em><code>&lt;body&gt;</code></em>
-        <script src="https://gist.github.com/aekaplan/8246032.js"></script>
+        <script src="https://gist.github.com/andrewborstein/a66a88b25384304d680f5d9abc5fdd36.js"></script>
       </div>
     </section>
 
-    <section class="example">
+    <section class="example grid">
       <div class="container">
-        <img src="img/container.png" alt="Container">
+          .container
       </div>
     </section>
 
@@ -225,10 +226,12 @@
         <div class="circle">7</div>
         <h1>Create a Column</h1>
         <p>With mobile first, columns are <code>block</code> level (take up the full width available) by default. No
-        additional styles needed! We're also giving them horizontal padding and vertical margins by default, but we can easily override that, too.</p>
+        additional styles needed! We're also giving them padding inside and margins outside, default styles that we can easily override later.</p>
         <hr>
-        <em><code>&lt;body&gt;</code></em>
+        <em><code>grid.css</code></em>
         <script src="https://gist.github.com/andrewborstein/fdcf1fba1c71b2b360ed.js"></script>
+        <em><code>&lt;body&gt;</code></em>
+        <script src="https://gist.github.com/andrewborstein/85bf6c9e286e391cca52459dc0d45a6a.js"></script>
       </div>
     </section>
 
@@ -485,8 +488,8 @@
     <section>
       <div class="container">
         <div class="circle">12</div>
-        <h1>Remove Horizontal Padding</h1>
-        <p>Enable a grid without padding between each column by adding a <code>.no-padding</code> class to a <code>.container</code> element</p>
+        <h1>Remove Column Padding</h1>
+        <p>Enable a grid without padding inside each column by adding a <code>.no-padding</code> class to a <code>.container</code> element</p>
         <hr>
         <em><code>grid.css</code></em>
         <script src="https://gist.github.com/andrewborstein/0ad4701b925188726efd.js"></script>
@@ -522,7 +525,7 @@
     <section>
       <div class="container">
         <div class="circle">13</div>
-        <h1>Remove Vertical Margin</h1>
+        <h1>Remove Column Margin</h1>
         <p>Enable a grid without margin below each column by adding a <code>.no-margin</code> class to a <code>.container</code> element</p>
         <hr>
         <em><code>grid.css</code></em>
@@ -533,7 +536,7 @@
     </section>
 
     <section class="example grid">
-      <div class="container no-padding no-margin">
+      <div class="container no-margin">
         <div class="row">
           <div class="column">
             <span>.column</span>
@@ -613,7 +616,7 @@
         web design mastery. Keep practicing and help make the web a better,
         more useable place.</p>
         <hr>
-        <p><a href="/example" target="_blank" class="button">View the Example</a></p>
+        <p><a href="/responsive-grid/example" target="_blank" class="button">View the Example</a></p>
       </div>
     </section>
 
