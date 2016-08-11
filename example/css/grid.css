@@ -29,11 +29,12 @@ html {
  */
 .container {
   max-width: 1140px; /* Main width of your website! Change at your leisure, or use the .container-fluid class instead. */
-  padding: 2em 2em 0 2em;
+  padding: 1em 2em;
   margin-right: auto;
   margin-left: auto;
+  overflow: auto;
 }
-.container-fluid {
+.container.fluid {
   max-width: none;
 }
 
@@ -66,13 +67,10 @@ html {
  */
 .column {
   float: left;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 2em;
-  width: 100%
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 100%;
 }
-
-
 
 /*
  * ----------------------
@@ -86,21 +84,21 @@ html {
 @media (min-width: 769px) {
 
   .column.three-fourths { width: 75%; }
-  .column.two-thirds { width: 66.66%; }
-  .column.one-half { width: 50%; }
-  .column.one-third { width: 33.33%; }
-  .column.one-fourth { width: 25%; }
-  .column.one-sixth { width: 16.66%; }
+  .column.two-thirds    { width: 66.666%; }
+  .column.one-half      { width: 50%; }
+  .column.one-third     { width: 33.333%; }
+  .column.one-fourth    { width: 25%; }
+  .column.one-sixth     { width: 16.666%; }
 
   /*
    * Offset a grid element, by (virutally) creating an empty one.
    */
-  .column.offset-three-fourths { margin-left: 75%; }
-  .column.offset-two-thirds { margin-left: 66.66%; }
-  .column.offset-one-half { margin-left: 50%; }
-  .column.offset-one-third { margin-left: 33.33%; }
-  .column.offset-one-fourth { margin-left: 25%; }
-  .column.offset-one-sixth { margin-left: 16.66%; }
+  .column.offset-three-fourths  { margin-left: 75%; }
+  .column.offset-two-thirds     { margin-left: 66.666%; }
+  .column.offset-one-half       { margin-left: 50%; }
+  .column.offset-one-third      { margin-left: 33.333%; }
+  .column.offset-one-fourth     { margin-left: 25%; }
+  .column.offset-one-sixth      { margin-left: 16.666%; }
 
 }
 
@@ -134,10 +132,6 @@ html {
   padding-right: 0;
   padding-left: 0;
 }
-.no-padding {
-  padding-right: 3em;
-  padding-left: 3em;
-}
 
 
 /*
@@ -145,7 +139,4 @@ html {
  */
 .no-margin .column {
   margin-bottom: 0;
-}
-.no-padding.no-margin {
-  padding-bottom: 2em;
 }

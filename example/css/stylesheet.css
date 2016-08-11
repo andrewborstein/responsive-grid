@@ -1,50 +1,94 @@
-/* Custom Styles */
+/*
+ * ----------------------
+ * EXAMPLE STYLES
+ * ----------------------
+ */
+
 body {
   background-color: #497bad;
   font-family: Lato, sans-serif;
   color: #fff;
 }
+
 body:before {
   display: block;
-  background: rgba(225,255,255,0.1);
-  border-bottom: 2px solid rgba(255,255,255,0.2);
+  background: rgba(225, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   padding: 1em;
   text-align: center;
   font-style: italic;
 }
-.example {
+
+.example-style {
+  text-align: center;
+}
+
+.example-style section {
   border-top: none;
   margin-bottom: 6em;
+  overflow: auto;
 }
+
 @media (min-width: 1025px) {
-  .example .container { border: 2px dashed rgba(255, 255, 255, 0.5); }
+  .example-style .container {
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+  }
 }
-.example span {
-  background: rgba(225,255,255,0.1);
-  border: 2px solid rgba(255,255,255,0.2);
-  padding: 1rem;
-  display: block;
-  text-align: center;
+
+.example-style .container:not(.no-padding) {
+  padding-bottom: 0;
 }
-.example h2 {
+
+.example-style .column {
+  background: rgba(225, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.example-style .no-padding .column {
+  padding: 0;
+}
+
+.example-style h1 {
+  padding: 3em 0;
+  margin: 0 0 6em;
+  letter-spacing: 6px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: white;
+  color: #497bad;
+}
+
+.example-style h2 {
   color: white;
   font-size: 3em;
-  margin: 1em 0;
   font-weight: 100;
   letter-spacing: 1px;
-  text-align: center;
+  margin: 1em 0;
   text-transform: uppercase;
 }
-.button {
-  text-align: center
+
+.example-style .button a {
+  text-align: center;
+  background: white;
+  padding: 1em;
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
 }
-.button a {
-    text-align: center;
-    background: white;
-    padding: 1em;
-    text-decoration: none;
-    color: #333;
+
+.example-style .button a:first-of-type {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
 }
-.button a:hover {
-    background: #ddd;
+
+.example-style .button a:hover {
+  background: #ddd;
 }
+
+.example-style .button a:first-of-type:hover {
+  background: transparent;
+  color: #ddd;
+  border-color: #ddd;
+}
+
