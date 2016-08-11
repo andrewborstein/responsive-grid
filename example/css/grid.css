@@ -129,8 +129,7 @@ html {
  * Enable grid without padding between each column by adding '.no-padding' to a '.container' element.
  */
 .no-padding .column {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 
