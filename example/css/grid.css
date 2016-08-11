@@ -46,20 +46,17 @@ html {
  */
 
 /*
- * We wrap our columns inside rows to prevent other elements from stacking next to them.
- * We fix these clearing issues using the popular "clearfix hack".
+ * We wrap our columns inside rows to prevent other elements from stacking next to them, i.e. clearing issues.
+ * We fix these by applying a version of the popular "clearfix" (http://cssmojo.com/the-very-latest-clearfix-reloaded/)
+ * to our row class, which will contain floated column elements.
  */
 .row {
   margin-right: -1em;
   margin-left: -1em;
-  *zoom: 1;
 }
-.row:before,
 .row:after {
   content: " ";
-  display: table;
-}
-.row:after {
+  display: block;
   clear: both;
 }
 
@@ -111,12 +108,10 @@ html {
  * Add as many @media query break points as you like, trying to keep in mind common device screen widths.
  */
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* You custom styles here */
-  body:before { content: "Show me for landscape oriented iPads only."; }
+  /* Add your custom styles here, which will only display on landscape oriented iPads. */
 }
 @media (max-width: 320px) {
-  /* You custom styles here */
-  body:before { content: "Show me for portrait oriented iPhone 4 / 5 only."; }
+  /* Add your custom styles here, which will only display on portrait oriented iPhone 4 / 5. */
 }
 
 
