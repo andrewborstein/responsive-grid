@@ -582,14 +582,10 @@ html {
 .row {
   margin-right: -1em;
   margin-left: -1em;
-  *zoom: 1;
 }
-.row:before,
 .row:after {
   content: " ";
-  display: table;
-}
-.row:after {
+  display: block;
   clear: both;
 }
 
