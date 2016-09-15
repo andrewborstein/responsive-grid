@@ -1,16 +1,17 @@
 /*
  * ----------------------
- * EXAMPLE STYLES
+ * GRID - DEMO STYLES
  * ----------------------
  */
 
-body {
+.example-style {
   background-color: #497bad;
   font-family: Lato, sans-serif;
   color: #fff;
+  text-align: center;
 }
 
-body:before {
+.example-style:before {
   display: block;
   background: rgba(225, 255, 255, 0.1);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
