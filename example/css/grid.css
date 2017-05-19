@@ -28,11 +28,11 @@ html {
  * Using a container will make designing for responsive easier!
  */
 .container {
-  max-width: 1140px; /* Main width of your website! Change at your leisure, or use the .container-fluid class instead. */
-  padding: 1em 2em;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px; /* Main width of your website! Change at your leisure, or use the .container-fluid class instead. */
   overflow: auto;
+  padding: 1em 2em;
 }
 .container.fluid {
   max-width: none;
@@ -52,13 +52,16 @@ html {
  * to our row class, which will contain floated column elements.
  */
 .row {
-  margin-right: -1em;
   margin-left: -1em;
+  margin-right: -1em;
 }
 .row:after {
+  clear: both;
   content: " ";
   display: block;
-  clear: both;
+}
+.row + .row {
+  margin-top: 1em;
 }
 
 /*
@@ -68,7 +71,6 @@ html {
 .column {
   float: left;
   padding: 1em;
-  margin-bottom: 1em;
   width: 100%;
 }
 
@@ -136,6 +138,6 @@ html {
 /*
  * Enable grid without margin below each row by adding '.no-margin' to the '.container'.
  */
-.no-margin .column {
-  margin-bottom: 0;
+.no-margin .row {
+  margin-top: 0;
 }
