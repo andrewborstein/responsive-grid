@@ -67,10 +67,18 @@
 .example-style .button a {
   background: white;
   color: #333;
-  margin: 0 1em;
+  display: block;
+  margin: 1em;
   padding: 1em;
   text-align: center;
   text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+@media (min-width: 1025px) {
+  .example-style .button a {
+    display: inline-block;
+  }
 }
 
 .example-style .button a:first-of-type {
@@ -80,11 +88,5 @@
 }
 
 .example-style .button a:hover {
-  background: #ddd;
-}
-
-.example-style .button a:first-of-type:hover {
-  background: transparent;
-  border-color: #ddd;
-  color: #ddd;
+  opacity: 0.7
 }

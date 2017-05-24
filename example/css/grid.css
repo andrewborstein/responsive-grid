@@ -30,10 +30,12 @@ html {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px; /* Main width of your website! Change at your leisure, or use the .container-fluid class instead. */
+  max-width: 1140px; /* This should the maximum width of your website content! Change at your leisure... */
   overflow: auto;
   padding: 1em 2em;
 }
+
+/* ...or use the .container-fluid class instead, to make the content always stretch to be full-width. */
 .container.fluid {
   max-width: none;
 }
@@ -50,6 +52,7 @@ html {
  * We wrap our columns inside rows to prevent other elements from stacking next to them, i.e. clearing issues.
  * We fix these by applying a version of the popular "clearfix" (http://cssmojo.com/the-very-latest-clearfix-reloaded/)
  * to our row class, which will contain floated column elements.
+ * We use negative margins to make sure rows/column can be infinitely nested.
  */
 .row {
   margin-left: -1em;
@@ -60,6 +63,8 @@ html {
   content: " ";
   display: block;
 }
+
+/* Add some vertical rhythm (space between each row) by default */
 .row + .row {
   margin-top: 1em;
 }
@@ -74,7 +79,7 @@ html {
 
 /*
  * Use float to line up our grid elements next to each other.
- * By default (i.e. mobile devices), make all columns 100% wide with some padding and margin.
+ * By default (i.e. mobile devices), make all columns 100% wide with some padding.
  */
 .column {
   float: left;
@@ -82,7 +87,15 @@ html {
   width: 100%;
 }
 
-
+/* Add some vertical rhythm (space between each column) by default, only on mobile. */
+.column + .column {
+  margin-top: 1em;
+}
+@media (min-width: 769px) {
+  .column + .column {
+    margin-top: 0;
+  }
+}
 
 /*
  * ----------------------
@@ -144,7 +157,7 @@ html {
 /*
  * no-padding
  * ----------------------
- * Enable grid without padding between each column by adding '.no-padding' to a '.container' element.
+ * Enable a grid without padding inside columns by adding '.no-padding' to a '.container' element.
  */
 .no-padding .column {
   padding: 0;
@@ -153,8 +166,9 @@ html {
 /*
  * no-margin
  * ----------------------
- * Enable grid without margin below each row by adding '.no-margin' to the '.container'.
+ * Enable a grid without margin between rows (everywhere) and columns (on mobile) by adding '.no-margin' to the '.container'.
  */
-.no-margin .row {
+.no-margin .row,
+.no-margin .column {
   margin-top: 0;
 }
